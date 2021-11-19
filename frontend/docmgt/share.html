@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="/frontend/components/components.js"></script>
+    <script src="/frontend/scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+</head>
+<script>
+    mounted();
+    getAuth();
+    setSharing();
+</script>
+
+<body>
+    <script>navbar('docs');</script>
+
+    <div class="popup" id="modal-share">
+        <script>modalHeaderDelete('Confirm from Webpage');</script>
+        <div class="pad-bottom-24">
+            <button type="button" class="btn-blue-border px-5 bg-white" onclick="removeUser();">ok</button>
+            <a href="share.html" class="px-5">
+                <button type="button" class="btn-padbig bg-white">cancel</button>
+            </a>
+        </div>
+    </div>
+
+    <div>
+        <div class="px-1">
+            <h1>Upload Sharing:
+                <span class="fw-regular">
+                    <script>document.write(filename);</script>
+                </span>
+            </h1>
+        </div>
+        <table class="table-wrapper">
+
+            <script>
+                var headers = [
+                    'Shared User',
+                    'Action'
+                ];
+                tableHeader(headers);
+                fillSharing();
+                emptyRow(3, 'shared');
+            </script>
+        </table>
+
+        <script>pageHeader('Add Sharing');</script>
+
+        <div class="box-outlined-share">
+            <form action="share.html" method="GET" onsubmit="return userAssign();">
+                <h3 class="d-block">
+                    Choose User:
+                </h3>
+                <select class="form-select d-block w-400" id="share_user">
+                    <script>
+                        fillDropdown();
+                    </script>
+                </select>
+                <button type="submit" class="btn-outline bg-gray d-block"> Add Share </button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="/frontend/scripts/script.js"></script>
+    <script>checkLoggedIn()</script>
+    <script>mounted();</script>
+</head>
+
+<body>
+    <div class="container-50">
+        <form action="login-success.html" method="GET" onsubmit="return login();">
+            <div>
+                <h1>Login</h1>
+            </div>
+            <div class="py-5">
+                <div class="clipped-left">
+                    <span class="fw-bold form-label">Email</span>
+                </div>
+                <div>
+                    <input type="text" class="textfield" id="email" placeholder="Email Address">
+                </div>
+            </div>
+
+            <div class="py-5">
+                <div class="clipped-left">
+                    <span class="fw-bold form-label">Password</span>
+                </div>
+                <input type="password" class="textfield" id="password" placeholder="Password">
+            </div>
+
+            <div class="py-5">
+                <button type="submit" class="btn-outline bg-skyblue fw-bold">
+                    Login
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

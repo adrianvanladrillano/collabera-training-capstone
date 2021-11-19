@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="/frontend/components/components.js"></script>
+    <script src="/frontend/scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        mounted();
+        getAuth();
+    </script>
+</head>
+
+<body>
+    <script>navbar('user');</script>
+    <div class="popup" id="modal">
+        <script>modalHeaderDelete('Confirm User Deletion');</script>
+        <div class="pad-bottom-24">
+            <button onclick="deleteUser();" class="btn-blue-border px-5 bg-white">ok</button>
+            <a href="index.html" class="px-5">
+                <button class="btn-padbig bg-white">cancel</button>
+            </a>
+        </div>
+    </div>
+    <div>
+        <script>pageHeader('Users');</script>
+        <table class="table-wrapper">
+            <script>
+                var headers = ['Name', 'User Email ID', '']
+                tableHeader(headers);
+                fillUsers2();
+                emptyRow(2)
+            </script>
+        </table>
+    </div>
+</body>
+
+</html>

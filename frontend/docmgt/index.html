@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../components/components.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        mounted();
+        getAuth();
+    </script>
+</head>
+
+<body>
+    <script>navbar('docs');</script>
+
+    <!-- Delete Modal -->
+    <div class="popup" id="modal">
+        <script>modalHeaderDelete('Confirm file Deletion');</script>
+        <div class="pad-bottom-24">
+            <button onclick="deleteUpload();" class="btn-blue-border px-5 bg-white">ok</button>
+            <a href="index.html" class="px-5">
+                <button class="btn-padbig bg-white">cancel</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Upload Modal -->
+    <div class="popup-upload" id="modal-upload">
+        <script>modalHeader('Upload');</script>
+        <form action="index.html" method="GET" onsubmit="return addFile();" enctype="multipart/form-data">
+            <div class="py-5">
+                <div class="d-block w-35 text-align-center">
+                    <h3 class="d-block px-5 ">File Description</h3>
+                </div>
+
+                <div class="w-60 d-block">
+                    <input type="text" class="textfield  textfield-100" value="Sample File" id="file_desc">
+                </div>
+            </div>
+
+            <div style="display: block;" class="py-5">
+                <div class="d-block w-35 text-align-center">
+                    <h3 class="d-block px-5">File Upload</h3>
+                </div>
+
+                <div class="d-block w-60 text-align-center" style="position: relative;">
+                    <input type="file" class="btn-small bg-gray fw-bold btn-choose" id="fileinput" name="fileinput">
+                    <!-- <button type="button" class="btn-small bg-gray fw-bold btn-choose">Choose
+                        File</button> -->
+                    <h3 style="margin-left: 100px">Sample.doc</span>
+                </div>
+            </div>
+
+            <div class="py-5">
+                <div class="d-block w-35 text-align-center">
+                    <a href="index.html">
+                        <button type="submit" class="btn-outline bg-gray fw-bold">Upload Now</button>
+                    </a>
+                </div>
+
+                <div class="d-block w-60 ">
+                    <a href="index.html">
+                        <button type="button" class="btn-outline bg-gray fw-bold">Cancel</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="popup-upload" id="modal-edit">
+        <script>modalHeader('Edit');</script>
+        <form action="index.html" method="GET" onsubmit="return uploadUpdate();">
+
+            <div class="py-5 px-10">
+                <div class="d-block text-align-center">
+                    <h3 class="d-block px-5 text-align-center">File Description</h3>
+                </div>
+                <div class="d-block w-70">
+                    <input type="text" class="textfield textfield-100" id="edit_desc">
+                </div>
+            </div>
+
+            <div class="py-5">
+                <div class="d-block w-25">
+                </div>
+                <div class="w-70 d-block pad-bottom-150">
+                    <button type="submit" class="btn-outline2 bg-gray fw-bold">Save</button>
+                    <a href="index.html">
+                        <button type="button" class="btn-outline2 bg-gray fw-bold mx-10">Cancel</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>pageHeader('My Uploads');</script>
+
+    <table class="table-wrapper">
+        <script>
+            var headers = [
+                'Label',
+                'File Name',
+                'Action'
+            ];
+            tableHeader(headers);
+            fillUploads();
+            emptyRow(3);
+        </script>
+    </table>
+
+    <script>pageHeader('Shared Uploads');</script>
+
+    <div class="container-table">
+        <button onclick="showModalUpload();" class="btn-outline bg-skyblue absolute-bottom-left"> + Add Upload
+        </button>
+        <table class="table-wrapper">
+            <script>
+                var headers = [
+                    'Label',
+                    'File Name',
+                    'Shared by'
+                ];
+                tableHeader(headers);
+                fillShared();
+                emptyRow(3);
+            </script>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="/frontend/components/components.js"></script>
+    <script src="/frontend/scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        mounted();
+        getAuth();
+    </script>
+</head>
+
+<body>
+    <script>navbar();</script>
+
+    <div class="container-50">
+        <h1>Login Successful</h1>
+        <div class="py-10">
+            <h2 class="fw-bold">
+                Welcome !
+                <span class="fw-regular">
+                    <script>
+                        document.write(auth.email);
+                    </script>
+                </span>
+            </h2>
+        </div>
+    </div>
+</body>
+
+</html>

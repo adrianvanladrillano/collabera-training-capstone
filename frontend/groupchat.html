@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/frontend/components/components.js"></script>
+
+    <script src="/frontend/scripts/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        mounted();
+        getAuth();
+    </script>
+</head>
+
+<body>
+    <script>navbar('gc');</script>
+    <br>
+    <br>
+
+    <div class="box-outlined py-5">
+        <span class="text-title">
+            Group Chat
+        </span>
+        <a href="users/login-success.html">
+            <span class="btn-exit">
+                X
+            </span>
+        </a>
+    </div>
+
+    <div class="container-groupchat" style="height: 60vh;overflow-y: scroll;" id="chat">
+
+        <script>
+            // fillChat();
+            fillChat();
+
+            // setTimeout(() => {
+            //     document.write(fillChat())
+            // }, 2000);
+            // document.write(fillChat())
+        </script>
+    </div>
+    <form action="groupchat.html" method="GET" onsubmit="return addMessage();reload()">
+        <div class="box-outlined">
+            <h3 style="display: inline-block;">
+                <script>
+                    document.write(auth.name);
+                </script>
+            </h3>
+
+            <input type="text" class="textfield textfield-80 mx-5" id="message" placeholder="Enter message here..">
+
+            <div style="display: inline-block;">
+                <button type="submit" class="btn-small bg-white fw-bold">
+                    Send
+                </button>
+                <button type="button" class="btn-small bg-white fw-bold" onclick="fillChat()">
+                    Refresh
+                </button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

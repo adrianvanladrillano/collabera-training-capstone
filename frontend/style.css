@@ -1,0 +1,730 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Containers */
+
+.container-50 {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    max-width: 100%;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.container-40 {
+    position: relative;
+    margin: auto;
+    width: 40%;
+    max-width: 40%;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.container-30 {
+    position: relative;
+    margin: auto;
+    width: 35%;
+    max-width: 100%;
+    padding-top: 10vh;
+    text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+.clipped-left {
+    position: absolute;
+    width: 30%;
+    text-align: right;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .clipped-left {
+        position: relative;
+        margin: auto;
+        width: 270px;
+        text-align: left;
+        padding-top: 10px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 75%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 65%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 50%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 40%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 40%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
+/* @media only screen and (max-width: 1800px) {
+    .container-30 {
+        position: relative;
+        margin: auto;
+        width: 50%;
+        max-width: 50%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-40 {
+        position: relative;
+        margin: auto;
+        width: 42%;
+        max-width: 42%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 75%;
+        max-width: 75%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .container-30 {
+        position: relative;
+        margin: auto;
+        width: 50%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-40 {
+        position: relative;
+        margin: auto;
+        width: 50%;
+        max-width: 50%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 75%;
+        max-width: 75%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .container-30 {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-40 {
+        position: relative;
+        margin: auto;
+        width: 60%;
+        max-width: 60%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .container-30 {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-40 {
+        position: relative;
+        margin: auto;
+        width: 70%;
+        max-width: 70%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container-30 {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-40 {
+        position: relative;
+        margin: auto;
+        width: 80%;
+        max-width: 80%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .container-30 {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-40 {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .container-50 {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+} */
+
+.popup {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    max-width: 100%;
+    z-index: 1;
+    background-color: white;
+    top: 25%;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.popup-upload {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    max-width: 100%;
+    z-index: 1;
+    background-color: white;
+    top: 25%;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.container-groupchat {
+    padding: 48px 24px;
+    height: 40vh;
+    font-size: 1.4em;
+}
+
+.modal-header {
+    border-bottom: 2px solid black;
+}
+
+.w-400 {
+    width: 500px;
+    margin: 0 24px;
+}
+
+.box-outlined {
+    border: 2px solid black;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.box-outlined-share {
+    border: 2px solid black;
+    max-width: 100%;
+    padding: 32px;
+    position: relative;
+}
+
+.container-success {
+    position: relative;
+    margin: auto;
+    max-width: 30%;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+.container-table {
+    width: 100%;
+    height: inherit;
+    position: relative;
+}
+
+.mb-5 {
+    margin-bottom: 24px;
+}
+
+.px-5 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.px-1 {
+    padding: 0px 4px;
+}
+
+.mx-5 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.mx-10 {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.py-5 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-10 {
+    padding: 32px 0px;
+}
+
+.absolute-bottom-left {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* @media only screen and (max-width: 1300px) {
+    .clipped-left {
+        position: relative;
+        width: 100%;
+        text-align: left;
+    }
+} */
+
+/* End of Containers */
+
+/* Text & Colors */
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-regular {
+    font-weight: 500;
+}
+
+.text-title {
+    font-size: 1.5em;
+}
+
+.form-label {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+/* @media only screen and (max-width: 1300px) {
+    .form-label {
+        font-size: 1.2em;
+    }
+} */
+
+.text-decoration-none {
+    text-decoration: none;
+    color: black;
+}
+
+.bg-skyblue {
+    background-color: #66FFFF;
+}
+
+.bg-gray {
+    background-color: #BFBFBF;
+}
+
+.bg-white {
+    background-color: #FFF;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.d-block {
+    display: inline-block;
+}
+
+.btn-blue-border {
+    border-radius: 12px;
+    font-size: 1.2em;
+    padding: 4px 30px;
+    border: 4px solid blue;
+}
+
+.btn-no-border {
+    border: 0;
+    background-color: transparent;
+    font-size: 1em;
+}
+
+.btn-padbig {
+    border-radius: 12px;
+    font-size: 1.2em;
+    padding: 4px 30px;
+}
+
+/* End of Text */
+
+/* Form fields */
+
+.textfield {
+    width: 250px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    font-size: 1.2em;
+}
+
+/* 
+@media only screen and (max-width: 1300px) {
+    .textfield {
+        width: 100%;
+        padding: 8px 8px;
+        border-radius: 5px;
+        border: 2px solid #000;
+        font-size: 1.2em;
+    }
+} */
+
+.form-select {
+    min-width: 25%;
+    max-width: 100%;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    font-size: 1.2em;
+}
+
+.textfield-80 {
+    width: 75%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-35 {
+    width: 35%;
+}
+
+.textfield-100 {
+    width: 100%;
+}
+
+.textfield-50 {
+    width: 50%;
+}
+
+/* End of Form fields */
+
+/* Buttons */
+
+.pad-bottom-24 {
+    padding-bottom: 24px;
+}
+
+.pad-bottom-150 {
+    padding-bottom: 150px;
+}
+
+.btn-outline {
+    width: 180px;
+    padding: 8px 0px;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 1.2em;
+}
+
+.btn-outline2 {
+    width: 150px;
+    padding: 8px 0px;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 1.2em;
+}
+
+.btn-choose {
+    position: absolute;
+    left: 0;
+    top: 12px
+}
+
+.btn-small {
+    padding: 4px 8px;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 1.2em;
+}
+
+.btn-exit {
+    position: absolute;
+    right: 0;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 4px 8px;
+    margin: 0 8px;
+}
+
+.btn-exit-small {
+    position: absolute;
+    margin-left: auto;
+    right: 0;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: -10px 2px 0px 0px;
+}
+
+/* End of Buttons */
+
+/* Tabs */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.tab button {
+    float: left;
+    width: 25%;
+    outline: none;
+    padding: 14px 16px;
+    font-size: 17px;
+    background-color: #BFBFBF;
+    cursor: pointer;
+}
+
+/* End of tabs */
+
+/* Tables */
+
+.table-wrapper {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000;
+}
+
+.table-wrapper td {
+    padding: 12px;
+    border-right: 2px solid #000;
+}
+
+.table-wrapper th {
+    background-color: #CCCCCC;
+    padding: 8px;
+    border-right: 2px solid #000;
+}
+
+.table-wrapper tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-wrapper tr:hover {
+    background-color: #ddd;
+}
+
+/* 
+
+.textfield {
+    width: 250px;
+    padding: 8px 8px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    font-size: 1.2em;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+}
+
+.form-label2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+}
+
+.form-container {
+    margin: auto;
+    position: relative;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.bg-skyblue {
+    background-color: #66FFFF;
+}
+
+.tabList {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabItem {
+    display: inline;
+    border: solid;
+    border-width: 1px 1px 0 1px;
+    margin: 0 5px 0 0;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    width: 25%;
+    outline: none;
+    background-color: #BFBFBF;
+    padding: 14px 16px;
+    font-size: 17px;
+} */
